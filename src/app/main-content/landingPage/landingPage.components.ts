@@ -1,0 +1,20 @@
+import { Component, signal } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Navbar } from './navbar/navbar'
+
+@Component({
+    selector: 'app-landingPage',
+    standalone: true,
+    imports: [CommonModule, Navbar],
+    template: `
+    <section>
+    <div><app-navbar></app-navbar></div>
+    <h1 class="fontRaleway">SAKURA RAMEN</h1>
+    <h2 class="fontRaleway">BEST RAMEN IN TOWN</h2>
+    </section>
+    `,
+    styleUrls: ['./landingPage.components.scss']
+})
+export class LandingPageComponent {
+
+}
