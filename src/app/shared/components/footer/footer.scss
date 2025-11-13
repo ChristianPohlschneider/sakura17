@@ -1,0 +1,35 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 120px;
+
+    div {
+        margin: 0px 160px;
+        padding: 0px;
+
+        >a {
+            >img {
+                height: 44px;
+            }
+        }
+    }
+}
+
+.footerframe {
+    display: flex;
+    margin: 0px 160px;
+    padding: 0px;
+
+    >a {
+        >img {
+            height: 40px;
+        }
+    }
+}
+
+
+.spaceleft {
+    margin-left: 16px;
+}

@@ -1,6 +1,34 @@
 /* You can add global styles to this file, and also import other style files */
 *{
     margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 96px;
+    font-weight: bold;
+    color: white;
+    margin: 0;
+}
+
+h2 {
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 80px;
+    font-weight: bold;
+    color: #9F0908;
+    margin: 0px;
+}
+
+h3 {
+    font-family: "Economica", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 56px;
+    font-weight: bold;
+    margin: 0px;
 }
 
 .fontRaleway {
