@@ -6,7 +6,14 @@
     height: 120px;
 
     div {
-        margin: 0px 160px;
+        &:nth-child(1) {
+            margin-left: 160px;
+        }
+
+        &:nth-child(2) {
+            margin-right: 160px;
+        }
+
         padding: 0px;
 
         >a {
@@ -28,10 +35,9 @@
 
 .footerframe {
     display: flex;
-    margin: 0px 160px;
     padding: 0px;
     align-items: center;
-    
+
     >a {
         >img {
             height: 40px;
