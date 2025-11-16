@@ -16,17 +16,44 @@
     ng serve --open: open with live server  
   -->
 
-  <!-- Wichtige Befehle:
+  <!-- 
+  Wichtige Befehle Angular:
   ng v:
-  ng --help: alle commands
-  ng new sakura: neues Projekt
-  ng generate component imprint: erstellt die komponente imprint im hauptverzeichnis
-  ng serve --open: öffnet das projekt im live server  
-  ng build --base-href "/angular-projects/sakura/" --source-map=true: setzt einen browser ordner und gleichzeitig den src ordner zum debuggen
-  strg c: beendet den live server
-  cd sakura: öffnet den unterordner sakura
-  htaccess.txt: datei zum umwandeln der hrefs für andere Server
+  ng --help : alle commands
+  ng new sakura : neues Projekt
+  ng generate component imprint : erstellt die komponente imprint im hauptverzeichnis
+  ng serve --open : öffnet das projekt im live server  
+  ng build --base-href "/angular-projects/sakura/" --source-map=true : setzt einen browser ordner und gleichzeitig den src ordner zum debuggen
+  strg c : beendet den live server
+  cd sakura : öffnet den unterordner sakura
+  htaccess.txt : datei zum umwandeln der hrefs für andere Server
+
+  Wichtige Befehle in SCSS:
+  >img {} : child selector, heisst das img im eltern-element wird angesprochen
+  ~img {} : geschwister
+  +img {} : addition
+  &:hover {} : hover funktion des elementes
+  &:nth-child(1) {} : spricht das erste child in der elementreihe an
+
+  $c: center; : Variable deklarieren in scss z.B.: align-items: $c;
+  @import './../../../../styles.scss'; : import der variablen in die navbar.scss
+
+  @mixin borderStyling($bStyle){
+      border-radius: 16px;
+      border: 3px $bStyle white;
+  }                             : Funktion in scss, mit der parameter aufgerufen werden können, z.B. mit @include
+  @include borderStyling(solid); : wieder in klasse einfügen
+  
+  @mixin displayFlexItemsCenter($display, $items: center) {
+    display: $display;
+    align-items: $items;
+  }                             : Funktion mit default: $items: center
+  @include displayFlexItemsCenter(flex) : align-items ist im default center
+  @include displayFlexItemsCenter($items: center) : align-items parameter direkt angesprochen
+
+  Beispiele in der navbar.scss und styles.scss!
    -->
+
   <app-root></app-root>
 </body>
 </html>

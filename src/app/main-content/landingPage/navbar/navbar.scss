@@ -1,10 +1,22 @@
+@import './../../../../styles.scss';
+
+@mixin borderFunction($bStyle) {
+    border-radius: 16px;
+    border: 3px $bStyle white;
+}
+
+@mixin displayFlexItemsCenter($display, $items: center) {
+    display: $display;
+    align-items: $items;
+}
+
 nav {
     padding: 32px;
     display: flex;
     justify-content: space-between;
-            top: 0px;
-            left: 160px;
-            right: 160px;
+    top: 0px;
+    left: 160px;
+    right: 160px;
 
     >img {
         width: 64px;
@@ -14,33 +26,37 @@ nav {
     >div {
         width: 600px;
         display: flex;
-           justify-content: space-between;
-            align-items: center;
-            font-size: 24px;
-            font-weight: normal;
+        justify-content: space-between;
+        align-items: $c;
+        font-size: 24px;
+        font-weight: normal;
+
         >a {
             &:hover {
-                 text-decoration: underline;
+                text-decoration: underline;
             }
         }
     }
 }
 
 a {
-    display: flex;
+    @include displayFlexItemsCenter(flex, center);
+    // display: flex;
+    // align-items: center;
     flex-direction: row;
-    align-items: center;
     text-decoration: none;
     color: white;
 }
 
+
+
 .phone_btn {
-    display: flex;
-    align-items: center;
+    @include displayFlexItemsCenter(flex, center);
+    // display: flex;
+    // align-items: center;
     justify-content: space-evenly;
-    background-color: #9F0908;
-    border-radius: 16px;
-    border: 3px solid white;
+    background-color: $dark_red;
+    @include borderFunction(solid);
     padding: 10px 10px;
 
     &:hover {
